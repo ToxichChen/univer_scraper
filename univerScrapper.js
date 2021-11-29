@@ -104,7 +104,7 @@ async function runSearchParser(query, sessionCookie) {
                 "id": salesNavSearchExportId,
                 "argument":
                     {
-                        "numberOfProfiles": 20,
+                        "numberOfProfiles": 250,
                         "extractDefaultUrl": true,
                         "removeDuplicateProfiles": true,
                         "accountSearch": false,
