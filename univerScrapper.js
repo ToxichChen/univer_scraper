@@ -111,7 +111,7 @@ async function runSearchParser(query, sessionCookie) {
                         "sessionCookie": sessionCookie,
                         "searches": query,
                         "numberOfResultsPerSearch": 2500,
-                        "csvName": "result"
+                        "csvName": credentials.result_file
                     },
             },
             initOptions,

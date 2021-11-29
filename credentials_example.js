@@ -2,6 +2,7 @@ export const dbHost = 'localhost';
 export const dbUser = 'dmitry';
 export const dbPassword = 'aqswdefr1';
 export const database = 'univer_parser';
+export const result_file = 'results_server';
 
 export const salesNavSearchExport = '8755642581798820'
 export const phantomBusterApiKey = 'T4CLwxsXjU5fhOoyAUpz5JADIrGIp1pTViuavE2ZQkI';
