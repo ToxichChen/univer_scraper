@@ -273,8 +273,8 @@ async function createNewQuery(query) {
 }
 
 async function createAlumni(result, industryId, functionId) {
-    let sql = (`INSERT INTO alumnis (name, last_name, full_name, linkedin_url, industry_id, title, function_id, location, duration, past_role, past_company, past_company_url, sales_nav_url)
-                    VALUES ("${result.firstName}", "${result.lastName}", "${result.fullName}", "${result.defaultProfileUrl}", ${industryId}, "${result.title}", ${functionId}, "${result.location}", "${result.duration}","${result.pastRole}","${result.pastCompany}","${result.pastCompanyUrl}","${result.profileUrl}" ) `);
+    let sql = (`INSERT INTO alumnis (name, last_name, full_name, linkedin_url, industry_id, title, function_id, location, duration, past_role, past_company, past_company_url, sales_nav_url, current_company_name, current_company_url, current_company_id)
+                    VALUES ("${result.firstName}", "${result.lastName}", "${result.fullName}", "${result.defaultProfileUrl}", ${industryId}, "${result.title}", ${functionId}, "${result.location}", "${result.duration}","${result.pastRole}","${result.pastCompany}","${result.pastCompanyUrl}","${result.profileUrl}","${result.companyName}","${result.companyUrl}","${result.companyId}" ) `);
     return await new Promise((resolve) => {
         con.query(sql, function (err, result) {
             if (err) {
